@@ -1,0 +1,19 @@
+class Composite
+!!!135042.java!!!	Composite()
+		
+!!!135170.java!!!	getIdComposite() : Integer
+		return idComposite;
+!!!135298.java!!!	setIdComposite(inout idComposite : Integer) : void
+		this.idComposite = idComposite;
+!!!135426.java!!!	getQuantite() : Integer
+		return quantite;
+!!!135554.java!!!	setQuantite(inout quantite : Integer) : void
+		this.quantite = quantite;
+!!!135682.java!!!	getProduit() : Produit
+		return produit;
+!!!135810.java!!!	setProduit(inout produit : Produit) : void
+		this.produit = produit;
+!!!135938.java!!!	getProduits() : Produit
+		return produits;
+!!!136066.java!!!	setProduits(inout produits : Set<Produit>) : void
+		this.produits = produits;

@@ -1,0 +1,37 @@
+class Adresse
+!!!128130.java!!!	getIdAdresse() : Integer
+		return idAdresse;
+!!!128258.java!!!	setIdAdresse(inout idAdresse : Integer) : void
+		this.idAdresse = idAdresse;
+!!!128386.java!!!	getRue() : String
+		return rue;
+!!!128514.java!!!	setRue(in rue : String) : void
+		this.rue = rue;
+!!!128642.java!!!	getNumero() : String
+		return numero;
+!!!128770.java!!!	setNumero(in numero : String) : void
+		this.numero = numero;
+!!!128898.java!!!	getZipcode() : String
+		return zipcode;
+!!!129026.java!!!	setZipcode(in zipcode : String) : void
+		this.zipcode = zipcode;
+!!!129154.java!!!	getVille() : String
+		return ville;
+!!!129282.java!!!	setVille(in ville : String) : void
+		this.ville = ville;
+!!!129410.java!!!	getPays() : Pays
+		return pays;
+!!!129538.java!!!	setPays(inout pays : Pays) : void
+		this.pays = pays;
+!!!129666.java!!!	getFactures() : Facture
+		return factures;
+!!!129794.java!!!	setFactures(inout factures : Set<Facture>) : void
+		this.factures = factures;
+!!!129922.java!!!	getClients() : Client
+		return clients;
+!!!130050.java!!!	setClients(inout clients : Set<Client>) : void
+		this.clients = clients;
+!!!130178.java!!!	toString() : String
+		return "Adresse [idAdresse=" + idAdresse + ", pays=" + pays + ", rue="
+				+ rue + ", numero=" + numero + ", zipcode=" + zipcode
+				+ ", ville=" + ville + "]";

@@ -1,0 +1,18 @@
+class Categorie
+!!!130306.java!!!	Categorie()
+		  
+!!!130434.java!!!	getIdCategorie() : Integer
+		return idCategorie;
+!!!130562.java!!!	setIdCategorie(inout idCategorie : Integer) : void
+		this.idCategorie = idCategorie;
+!!!130690.java!!!	getNomCategorie() : String
+		return nomCategorie;
+!!!130818.java!!!	setNomCategorie(in nomCategorie : String) : void
+		this.nomCategorie = nomCategorie;
+!!!130946.java!!!	toString() : String
+		return "Categorie [idCategorie=" + idCategorie + ", nomCategorie="
+				+ nomCategorie + "]";
+!!!131074.java!!!	getProduits() : Produit
+		return produits;
+!!!131202.java!!!	setProduits(inout produits : Set<Produit>) : void
+		this.produits = produits;

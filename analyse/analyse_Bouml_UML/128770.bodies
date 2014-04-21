@@ -1,0 +1,48 @@
+class Produit
+!!!143234.java!!!	getIdProduit() : int
+	return idProduit;
+!!!143362.java!!!	setIdProduit(in idProduit : int) : void
+	this.idProduit = idProduit;
+!!!143490.java!!!	getCategorie() : Categorie
+	return categorie;
+!!!143618.java!!!	setCategorie(inout categorie : Categorie) : void
+	this.categorie = categorie;
+!!!143746.java!!!	getLibelle() : String
+	return libelle;
+!!!143874.java!!!	setLibelle(in libelle : String) : void
+	this.libelle = libelle;
+!!!144002.java!!!	getReference() : String
+	return reference;
+!!!144130.java!!!	setReference(in reference : String) : void
+	this.reference = reference;
+!!!144258.java!!!	getPrixHtva() : double
+	return prixHtva;
+!!!144386.java!!!	setPrixHtva(in prixHtva : double) : void
+	this.prixHtva = prixHtva;
+!!!144514.java!!!	getDescription() : String
+	return description;
+!!!144642.java!!!	setDescription(in description : String) : void
+	this.description = description;
+!!!144770.java!!!	getVignette() : String
+	return vignette;
+!!!144898.java!!!	setVignette(in vignette : String) : void
+	this.vignette = vignette;
+!!!145026.java!!!	getStock() : int
+	return stock;
+!!!145154.java!!!	setStock(in stock : int) : void
+	this.stock = stock;
+!!!145282.java!!!	getLstComposites() : Composite
+	return lstComposites;
+!!!145410.java!!!	setLstComposites(inout lstComposites : Set<Composite>) : void
+	this.lstComposites = lstComposites;
+!!!145538.java!!!	getLots() : Lot
+	return lots;
+!!!145666.java!!!	setLots(inout lots : Set<Lot>) : void
+	this.lots = lots;
+!!!145794.java!!!	decrementerStock(in i : int) : void
+	// TODO Auto-generated method stub
+	// vérifier pour éviter stock négatif ...
+	this.setStock(this.getStock() - i);
+!!!145922.java!!!	incrementerStock(in i : int) : void
+	// TODO Auto-generated method stub
+	this.setStock(this.getStock() + i);

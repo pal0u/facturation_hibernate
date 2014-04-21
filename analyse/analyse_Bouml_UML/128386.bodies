@@ -1,0 +1,41 @@
+class Client
+!!!132738.java!!!	Client()
+		super();
+!!!132866.java!!!	getAdresse() : Adresse
+		return adresse;
+!!!132994.java!!!	setAdresse(inout adresse : Adresse) : void
+		this.adresse = adresse;
+!!!133122.java!!!	getDateNaissance() : Date
+		return dateNaissance;
+!!!133250.java!!!	setDateNaissance(inout dateNaissance : Date) : void
+		this.dateNaissance = dateNaissance;
+!!!133378.java!!!	getSexe() : char
+		return sexe;
+!!!133506.java!!!	setSexe(in sexe : char) : void
+		this.sexe = sexe;
+!!!133634.java!!!	getRemise() : double
+		return remise;
+!!!133762.java!!!	setRemise(in remise : double) : void
+		this.remise = remise;
+!!!133890.java!!!	getSociete() : String
+		return societe;
+!!!134018.java!!!	setSociete(in societe : String) : void
+		this.societe = societe;
+!!!134146.java!!!	getNrTva() : String
+		return nrTva;
+!!!134274.java!!!	setNrTva(in nrTva : String) : void
+		this.nrTva = nrTva;
+!!!134402.java!!!	getIdentification() : Identification
+		return identification;
+!!!134530.java!!!	setIdentification(inout identification : Identification) : void
+		this.identification = identification;
+!!!134658.java!!!	getFactures() : Facture
+		return factures;
+!!!134786.java!!!	setFactures(inout factures : Set<Facture>) : void
+		this.factures = factures;
+!!!134914.java!!!	toString() : String
+		return "Client [adresse=" + adresse + ", dateNaissance="
+				+ dateNaissance + ", sexe=" + sexe + ", remise=" + remise
+				+ ", societe=" + societe + ", nrTva=" + nrTva + ", id=" + id
+				+ ", nom=" + nom + ", prenom=" + prenom + ", email=" + email
+				+ ", telephone=" + telephone + "]";

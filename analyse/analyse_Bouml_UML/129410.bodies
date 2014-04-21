@@ -1,0 +1,19 @@
+class Lot
+!!!140930.java!!!	Lot()
+	  
+!!!141058.java!!!	getIdLot() : Integer
+	return idLot;
+!!!141186.java!!!	setIdLot(inout idLot : Integer) : void
+	this.idLot = idLot;
+!!!141314.java!!!	getQuantite() : int
+	return quantite;
+!!!141442.java!!!	setQuantite(in quantite : int) : void
+	this.quantite = quantite;
+!!!141570.java!!!	getProduit() : Produit
+	return produit;
+!!!141698.java!!!	setProduit(inout produit : Produit) : void
+	this.produit = produit;
+!!!141826.java!!!	getFactures() : Facture
+	return factures;
+!!!141954.java!!!	setFactures(inout factures : Set<Facture>) : void
+	this.factures = factures;

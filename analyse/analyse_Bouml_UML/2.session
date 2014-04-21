@@ -1,0 +1,11 @@
+window_sizes 1536 803 314 1216 694 35
+diagrams
+  active  classdiagram_ref 134530 // diaClasses
+    1216 692 100 2 0 0
+end
+show_stereotypes
+selected class_ref 129026 // Identification
+open
+  classview_ref 128002 // pojo
+end
+end

@@ -1,0 +1,22 @@
+class Vendeur
+!!!147202.java!!!	Vendeur()
+		
+!!!147330.java!!!	getChef() : Vendeur
+		return chef;
+!!!147458.java!!!	setChef(inout chef : Vendeur) : void
+		this.chef = chef;
+!!!147586.java!!!	getFactures() : Facture
+		return factures;
+!!!147714.java!!!	setFactures(inout factures : Set<Facture>) : void
+		this.factures = factures;
+!!!147842.java!!!	getCommission() : float
+		return commission;
+!!!147970.java!!!	setCommission(in commission : float) : void
+		this.commission = commission;
+!!!148098.java!!!	getTypeVendeur() : String
+		return typeVendeur;
+!!!148226.java!!!	setTypeVendeur(in typeVendeur : String) : void
+		this.typeVendeur = typeVendeur;
+!!!148354.java!!!	toString() : String
+		return "Vendeur [id=" + id + ", nom=" + nom + ", prenom=" + prenom
+				+ ", email=" + email + ", telephone=" + telephone + "]";

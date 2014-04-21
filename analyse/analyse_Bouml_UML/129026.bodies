@@ -1,0 +1,22 @@
+class Identification
+!!!139650.java!!!	Identification()
+	  
+!!!139778.java!!!	getId() : Integer
+	return id;
+!!!139906.java!!!	setId(inout id : Integer) : void
+	this.id = id;
+!!!140034.java!!!	getLogin() : String
+	return login;
+!!!140162.java!!!	setLogin(in login : String) : void
+	this.login = login;
+!!!140290.java!!!	getPassword() : String
+	return password;
+!!!140418.java!!!	setPassword(in password : String) : void
+	this.password = password;
+!!!140546.java!!!	getClient() : Client
+	return client;
+!!!140674.java!!!	setClient(inout client : Client) : void
+	this.client = client;
+!!!140802.java!!!	toString() : String
+	return "Identification [id=" + id + ", login=" + login + ", password="
+			+ password + ", client=" + client + "]";

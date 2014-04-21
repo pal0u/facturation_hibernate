@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/facturationmf</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    
+    	<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>	
+        <property name="show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+        <!-- create : A mettre lorsqu'on veut generer les tables a partir des classes, validate pour valider les annotations qui sont dans les classes qui doivent correspondre à mes tables, update : pour ajouter une table supplementaire (MaJ de la DB)-->
+        <property name="hbm2ddl.auto">validate</property>
+    
+        <mapping class="pojo.Adresse" />
+        <mapping class="pojo.Categorie" />
+        <mapping class="pojo.Client" />
+        <mapping class="pojo.Composite" />
+        <mapping class="pojo.Facture" /> 
+        <mapping class="pojo.Identification" /> 
+        <mapping class="pojo.Lot" /> 
+        <mapping class="pojo.Pays" />
+        <mapping class="pojo.Personne" />
+        <mapping class="pojo.Produit" />
+        <mapping class="pojo.ProduitC" />
+        <mapping class="pojo.ProduitS" />
+        <mapping class="pojo.Vendeur" />
+        
+    </session-factory>
+</hibernate-configuration>

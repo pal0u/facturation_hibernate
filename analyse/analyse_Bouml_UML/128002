@@ -1,0 +1,3148 @@
+format 76
+"pojo" // pojo
+  revision 2
+  modified_by 2 "patri_000"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "c:/Users/patri_000/workspace_kepler/FacturationMF/src/pojo/"
+  java_package "pojo"
+  classview 128002 "pojo"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 128002 "Adresse"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"adresse\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128002 "idAdresse"
+	private explicit_type "Integer"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128130 "rue"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128258 "numero"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128386 "zipcode"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128514 "ville"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 128130 // pays (<unidirectional association>)
+	relation 128130 --->
+	  a role_name "pays" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128130 // pays (<unidirectional association>)
+	  b parent class_ref 128258 // Pays
+      end
+
+      classrelation 128258 // clients (<unidirectional association>)
+	relation 128258 --->
+	  stereotype "Set"
+	  a role_name "clients" init_value " new HashSet<Client>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 128258 // clients (<unidirectional association>)
+	  b parent class_ref 128386 // Client
+      end
+
+      classrelation 128386 // factures (<unidirectional association>)
+	relation 128386 --->
+	  stereotype "Set"
+	  a role_name "factures" init_value " new HashSet<Facture>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 128386 // factures (<unidirectional association>)
+	  b parent class_ref 128514 // Facture
+      end
+
+      operation 128002 "Adresse"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128130 "getIdAdresse"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = \"idAdresse\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 128258 "setIdAdresse"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idAdresse" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128386 "getRue"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"rue\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 128514 "setRue"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "rue" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128642 "getNumero"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"numero\", nullable = false, length = 10)
+"
+	
+	
+	
+      end
+
+      operation 128770 "setNumero"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "numero" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128898 "getZipcode"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"zipCode\", nullable = false, length = 5)
+"
+	
+	
+	
+      end
+
+      operation 129026 "setZipcode"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "zipcode" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129154 "getVille"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"ville\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 129282 "setVille"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "ville" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129410 "getPays"
+	public return_type class_ref 128258 // Pays
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY) // On peut remplacer \"LAZY\" par \"EAGER\"
+	// Ca va correspondre à la FK pour relier à la table \"pays\"
+	@JoinColumn(name = \"pays_idPays\", nullable = false)
+"
+	
+	
+	
+	comment " Plusieurs adresses peuvent avoir le même pays
+ On peut remplacer \"LAZY\" par \"EAGER\"
+ Ca va correspondre à la FK pour relier à la table \"pays\""
+      end
+
+      operation 129538 "setPays"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "pays" type class_ref 128258 // Pays
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129666 "getFactures"
+	public return_type class_ref 128514 // Facture
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany (fetch = FetchType.LAZY, mappedBy = \"adresseLivraison\")
+"
+	
+	
+	
+	comment " récupérer la liste des factures utilisant cette adresse comme adressedelivraison"
+      end
+
+      operation 129794 "setFactures"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "factures" explicit_type "Set<Facture>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129922 "getClients"
+	public return_type class_ref 128386 // Client
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany (fetch = FetchType.LAZY, mappedBy = \"adresse\")
+"
+	
+	
+	
+	comment " récupérer la liste des clients utilisant cette adresse comme adressedefacturation"
+      end
+
+      operation 130050 "setClients"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "clients" explicit_type "Set<Client>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130178 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 128258 "Pays"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"pays\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131970 "idPays"
+	private explicit_type "Integer"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132098 "nomPays"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 131330 // adresses (<unidirectional association>)
+	relation 131330 --->
+	  stereotype "Set"
+	  a role_name "adresses" init_value " new HashSet<Adresse>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 131330 // adresses (<unidirectional association>)
+	  b parent class_ref 128002 // Adresse
+      end
+
+      operation 142082 "Pays"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142210 "getIdPays"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+  	@GeneratedValue(strategy = IDENTITY)
+  	@Column(name = \"idPays\", nullable = false, unique = true)
+"
+	
+	
+	
+      end
+
+      operation 142338 "setIdPays"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idPays" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142466 "getNomPays"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"nomPays\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 142594 "setNomPays"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nomPays" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142722 "getAdresses"
+	public return_type class_ref 128002 // Adresse
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany (fetch = FetchType.LAZY, mappedBy = \"pays\")
+"
+	
+	
+	
+	comment " Un pays peut avoir plusieurs adresses"
+      end
+
+      operation 142850 "setAdresses"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "adresses" explicit_type "Set<Adresse>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142978 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 128386 "Client"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"client\", catalog = \"facturationmf\")
+@AttributeOverrides({ 
+	@AttributeOverride(name=\"nom\", column=@Column(name=\"nom\")),
+	@AttributeOverride(name=\"prenom\", column=@Column(name=\"prenom\")), 
+	@AttributeOverride(name=\"email\", column=@Column(name=\"email\")), 
+	@AttributeOverride(name=\"telephone\", column=@Column(name=\"telephone\")) })
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128898 // <generalisation>
+	relation 128898 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128898 // <generalisation>
+	  b parent class_ref 128898 // Personne
+      end
+
+      attribute 129538 "dateNaissance"
+	private explicit_type "Date"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129666 "sexe"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129794 "remise"
+	private explicit_type "double"
+	init_value " 0.0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129922 "societe"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130050 "nrTva"
+	private explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 129154 // adresse (<unidirectional association>)
+	relation 129154 --->
+	  a role_name "adresse" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129154 // adresse (<unidirectional association>)
+	  b parent class_ref 128002 // Adresse
+      end
+
+      classrelation 129282 // factures (<unidirectional association>)
+	relation 129282 --->
+	  stereotype "Set"
+	  a role_name "factures" init_value " new HashSet<Facture>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 129282 // factures (<unidirectional association>)
+	  b parent class_ref 128514 // Facture
+      end
+
+      classrelation 129410 // identification (<unidirectional association>)
+	relation 129410 --->
+	  a role_name "identification" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129410 // identification (<unidirectional association>)
+	  b parent class_ref 129026 // Identification
+      end
+
+      operation 132738 "Client"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132866 "getAdresse"
+	public return_type class_ref 128002 // Adresse
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = \"adresse_idAdresse\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 132994 "setAdresse"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "adresse" type class_ref 128002 // Adresse
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133122 "getDateNaissance"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Temporal(TemporalType.DATE)
+	@Column(name = \"dateNaissance\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 133250 "setDateNaissance"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "dateNaissance" explicit_type "Date"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133378 "getSexe"
+	public explicit_return_type "char"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"sexe\", nullable = false, length = 1)
+"
+	
+	
+	
+      end
+
+      operation 133506 "setSexe"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "sexe" explicit_type "char"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133634 "getRemise"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"remise\", nullable = false, precision = 22, scale = 0)
+"
+	
+	
+	
+      end
+
+      operation 133762 "setRemise"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "remise" explicit_type "double"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133890 "getSociete"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"societe\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 134018 "setSociete"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "societe" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134146 "getNrTva"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"nrTva\", nullable = false, length = 20)
+"
+	
+	
+	
+      end
+
+      operation 134274 "setNrTva"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nrTva" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134402 "getIdentification"
+	public return_type class_ref 129026 // Identification
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToOne(fetch = FetchType.LAZY, mappedBy = \"client\", 
+			cascade = CascadeType.ALL)
+"
+	
+	
+	
+	comment " cascade signifie que si je supprime un client de ma BD, 
+ il va automatiquement effacer l'enregistrement 
+ correspondant dans identification"
+      end
+
+      operation 134530 "setIdentification"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "identification" type class_ref 129026 // Identification
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134658 "getFactures"
+	public return_type class_ref 128514 // Facture
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany(fetch = FetchType.LAZY, mappedBy = \"client\")
+"
+	
+	
+	
+      end
+
+      operation 134786 "setFactures"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "factures" explicit_type "Set<Facture>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134914 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 128514 "Facture"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"facture\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 130434 "idFacture"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130562 "nrFacture"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130690 "dateFacturation"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130818 "modePaiement"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130946 "payer"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 131074 "typeAchat"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 131202 "tauxTva"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 130050 // client (<unidirectional association>)
+	relation 130050 --->
+	  a role_name "client" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130050 // client (<unidirectional association>)
+	  b parent class_ref 128386 // Client
+      end
+
+      classrelation 130178 // vendeur (<unidirectional association>)
+	relation 130178 --->
+	  a role_name "vendeur" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130178 // vendeur (<unidirectional association>)
+	  b parent class_ref 129282 // Vendeur
+      end
+
+      classrelation 130306 // adresseLivraison (<unidirectional association>)
+	relation 130306 --->
+	  a role_name "adresseLivraison" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130306 // adresseLivraison (<unidirectional association>)
+	  b parent class_ref 128002 // Adresse
+      end
+
+      classrelation 130434 // lots (<unidirectional association>)
+	relation 130434 --->
+	  stereotype "Set"
+	  a role_name "lots" init_value " new HashSet<Lot>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 130434 // lots (<unidirectional association>)
+	  b parent class_ref 129410 // Lot
+      end
+
+      operation 136194 "Facture"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136322 "getIdFacture"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = \"idFacture\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 136450 "setIdFacture"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idFacture" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136578 "getNrFacture"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"nrFacture\", unique = true, nullable = false, length = 20)
+"
+	
+	
+	
+      end
+
+      operation 136706 "setNrFacture"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nrFacture" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136834 "getDateFacturation"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Temporal(TemporalType.DATE) 
+@Column(name = \"dateFacture\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 136962 "setDateFacturation"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "dateFacturation" explicit_type "Date"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137090 "getModePaiement"
+	public explicit_return_type "char"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"modePaiement\", nullable = false, length = 1)
+"
+	
+	
+	
+      end
+
+      operation 137218 "setModePaiement"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "modePaiement" explicit_type "char"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137346 "getPayer"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"payer\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 137474 "setPayer"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "payer" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137602 "getTypeAchat"
+	public explicit_return_type "char"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"typeAchat\", nullable = false, length = 1)
+"
+	
+	
+	
+      end
+
+      operation 137730 "setTypeAchat"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "typeAchat" explicit_type "char"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137858 "getTauxTva"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"tauxTva\", nullable = false, precision = 22, scale = 0)
+"
+	
+	
+	
+      end
+
+      operation 137986 "setTauxTva"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "tauxTva" explicit_type "double"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138114 "getAdresseLivraison"
+	public return_type class_ref 128002 // Adresse
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = \"adresse_idAdresse\")
+"
+	
+	
+	
+	comment " FK peut être null"
+      end
+
+      operation 138242 "setAdresseLivraison"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "adresse" type class_ref 128002 // Adresse
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138370 "getClient"
+	public return_type class_ref 128386 // Client
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = \"client_idClient\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 138498 "setClient"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "client" type class_ref 128386 // Client
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138626 "getLots"
+	public return_type class_ref 129410 // Lot
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToMany(fetch = FetchType.LAZY)
+@JoinTable(name=\"detailLot\", catalog=\"facturationmf\",  joinColumns = {  
+		  @JoinColumn(name=\"facture_idFacture\", nullable=false, updatable=false) }, inverseJoinColumns = {  
+		  @JoinColumn(name=\"lot_idLot\", nullable=false, updatable=false) })
+"
+	
+	
+	
+      end
+
+      operation 138754 "setLots"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "lots" explicit_type "Set<Lot>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138882 "addLot"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "lot" type class_ref 129410 // Lot
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "***************************************
+ méthodes pour la Set<Lot>"
+      end
+
+      operation 139010 "removeLot"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "lot" type class_ref 129410 // Lot
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139138 "removeAllLots"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139266 "getVendeur"
+	public return_type class_ref 129282 // Vendeur
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = \"vendeur_idVendeur\")
+"
+	
+	
+	
+      end
+
+      operation 139394 "setVendeur"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "vendeur" type class_ref 129282 // Vendeur
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139522 "montantTotalTvac"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " permet de calculer le montant Tvac de la facture"
+      end
+    end
+
+    class 128642 "Categorie"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"categorie\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128642 "idCategorie"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128770 "nomCategorie"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 128642 // produits (<unidirectional association>)
+	relation 128642 --->
+	  stereotype "Set"
+	  a role_name "produits" init_value " new HashSet<Produit>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 128642 // produits (<unidirectional association>)
+	  b parent class_ref 128770 // Produit
+      end
+
+      operation 130306 "Categorie"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130434 "getIdCategorie"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = \"idCategorie\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 130562 "setIdCategorie"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idCategorie" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130690 "getNomCategorie"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"nomCategorie\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 130818 "setNomCategorie"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nomCategorie" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130946 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 131074 "getProduits"
+	public return_type class_ref 128770 // Produit
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany(fetch = FetchType.LAZY, mappedBy = \"categorie\")
+"
+	
+	
+	
+      end
+
+      operation 131202 "setProduits"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "produits" explicit_type "Set<Produit>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128770 "Produit"
+      abstract visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE) 
+@DiscriminatorColumn(name=\"typeProduit\", discriminatorType=DiscriminatorType.STRING) 
+@Table(name=\"produit\",catalog=\"facturationmf\") 
+@DiscriminatorValue(\"Produit\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment " Voir si c'est vraiment nécessaire
+ Voir si c'est vraiment nécessaire"
+      attribute 132226 "idProduit"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132354 "libelle"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132482 "reference"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132610 "prixHtva"
+	protected explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132738 "description"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132866 "vignette"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 132994 "stock"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 131586 // categorie (<unidirectional association>)
+	relation 131586 --->
+	  a role_name "categorie" init_value " null" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131586 // categorie (<unidirectional association>)
+	  b parent class_ref 128642 // Categorie
+      end
+
+      classrelation 131714 // lots (<unidirectional association>)
+	relation 131714 --->
+	  stereotype "Set"
+	  a role_name "lots" init_value " new HashSet<Lot>(0)" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 131714 // lots (<unidirectional association>)
+	  b parent class_ref 129410 // Lot
+      end
+
+      classrelation 131842 // lstComposites (<unidirectional association>)
+	relation 131842 --->
+	  stereotype "Set"
+	  a role_name "lstComposites" init_value " new HashSet<Composite>(0)" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 131842 // lstComposites (<unidirectional association>)
+	  b parent class_ref 129154 // Composite
+      end
+
+      operation 143106 "retourPrix"
+	abstract public explicit_return_type "double"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 143234 "getIdProduit"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+@GeneratedValue(strategy = IDENTITY)
+@Column(name = \"idProduit\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 143362 "setIdProduit"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "idProduit" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 143490 "getCategorie"
+	public return_type class_ref 128642 // Categorie
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = \"categorie_idCategorie\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 143618 "setCategorie"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "categorie" type class_ref 128642 // Categorie
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 143746 "getLibelle"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"libelle\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 143874 "setLibelle"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "libelle" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 144002 "getReference"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"reference\", unique = true, nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 144130 "setReference"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "reference" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 144258 "getPrixHtva"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"prixHtva\", nullable = false, precision = 22, scale = 0)
+"
+	
+	
+	
+      end
+
+      operation 144386 "setPrixHtva"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "prixHtva" explicit_type "double"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 144514 "getDescription"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"description\", nullable = false, length = 65535)
+"
+	
+	
+	
+      end
+
+      operation 144642 "setDescription"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "description" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 144770 "getVignette"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"vignette\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 144898 "setVignette"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "vignette" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 145026 "getStock"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"stock\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 145154 "setStock"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "stock" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 145282 "getLstComposites"
+	public return_type class_ref 129154 // Composite
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany(fetch = FetchType.LAZY, mappedBy = \"produit\")
+"
+	
+	
+	
+      end
+
+      operation 145410 "setLstComposites"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "lstComposites" explicit_type "Set<Composite>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 145538 "getLots"
+	public return_type class_ref 129410 // Lot
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany(fetch = FetchType.LAZY, mappedBy = \"produit\")
+"
+	
+	
+	
+      end
+
+      operation 145666 "setLots"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "lots" explicit_type "Set<Lot>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 145794 "decrementerStock"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "i" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " *************************"
+      end
+
+      operation 145922 "incrementerStock"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "i" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128898 "Personne"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Inheritance(strategy= InheritanceType.TABLE_PER_CLASS)
+@Table(name = \"personne\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128898 "id"
+	protected explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129026 "nom"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129154 "prenom"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129282 "email"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129410 "telephone"
+	protected explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 131330 "Personne"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131458 "getId"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+@GeneratedValue(strategy = GenerationType.TABLE, generator = \"CUSTOMER_ID\")
+@TableGenerator(name = \"CUSTOMER_ID\",  table = \"counters\", pkColumnName = \"CounterName\",  valueColumnName = \"CounterValue\",  pkColumnValue = \"CUSTOMER_NO\", initialValue = 1, allocationSize = 1) 
+@Column(name = \"id\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 131586 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "id" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131714 "getNom"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"nom\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 131842 "setNom"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nom" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131970 "getPrenom"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"prenom\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 132098 "setPrenom"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "prenom" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132226 "getEmail"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"email\", nullable = false, length = 100)
+"
+	
+	
+	
+      end
+
+      operation 132354 "setEmail"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "email" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132482 "getTelephone"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"telephone\", nullable = false, length = 20)
+"
+	
+	
+	
+      end
+
+      operation 132610 "setTelephone"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "telephone" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129026 "Identification"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"identification\", catalog = \"facturationmf\", uniqueConstraints = 
+@UniqueConstraint(columnNames =  {\"login\", \"password\"}))
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131330 "id"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 131458 "login"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 131586 "password"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 130690 // client (<unidirectional association>)
+	relation 130690 --->
+	  a role_name "client" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130690 // client (<unidirectional association>)
+	  b parent class_ref 128386 // Client
+      end
+
+      operation 139650 "Identification"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139778 "getId"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@GenericGenerator(name = \"generator\", strategy = \"foreign\", parameters = 
+		  @Parameter(name = \"property\", value = \"client\")) 
+  @Id
+  @GeneratedValue(generator = \"generator\")
+  @Column(name = \"id\", unique = true, nullable = false)
+"
+	
+	
+	
+	comment " Hibernate doit recopier l'id du client 
+ dans id de cette classe"
+      end
+
+      operation 139906 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "id" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140034 "getLogin"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column (name = \"login\", nullable = false, length = 10)
+"
+	
+	
+	
+      end
+
+      operation 140162 "setLogin"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "login" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140290 "getPassword"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column (name = \"password\", nullable = false, length = 44)
+"
+	
+	
+	
+	comment " Ca dependra du cryptage utilisé (Pour SHA1, length  = 44, MD5 length = 32)"
+      end
+
+      operation 140418 "setPassword"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "password" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140546 "getClient"
+	public return_type class_ref 128386 // Client
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToOne(fetch = FetchType.LAZY)
+@PrimaryKeyJoinColumn
+"
+	
+	
+	
+	comment " Pour recopier la valeur de client vers identification"
+      end
+
+      operation 140674 "setClient"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "client" type class_ref 128386 // Client
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140802 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 129154 "Composite"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"composite\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 130178 "idComposite"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130306 "quantite"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 129666 // produit (<unidirectional association>)
+	relation 129666 --->
+	  a role_name "produit" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129666 // produit (<unidirectional association>)
+	  b parent class_ref 128770 // Produit
+      end
+
+      classrelation 129794 // produits (<unidirectional association>)
+	relation 129794 --->
+	  stereotype "Set"
+	  a role_name "produits" init_value " new HashSet<Produit>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 129794 // produits (<unidirectional association>)
+	  b parent class_ref 128770 // Produit
+      end
+
+      operation 135042 "Composite"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135170 "getIdComposite"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = \"idComposite\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 135298 "setIdComposite"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idComposite" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135426 "getQuantite"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"quantite\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 135554 "setQuantite"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "quantite" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135682 "getProduit"
+	public return_type class_ref 128770 // Produit
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = \"produit_idProduit\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 135810 "setProduit"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "produit" type class_ref 128770 // Produit
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135938 "getProduits"
+	public return_type class_ref 128770 // Produit
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name=\"detailComposite\", catalog=\"facturationmf\",  joinColumns = {  
+			  @JoinColumn(name=\"produit_idProduit\", nullable=false, updatable=false) }, inverseJoinColumns = {  
+			  @JoinColumn(name=\"composite_idComposite\", nullable=false, updatable=false) })
+"
+	
+	
+	
+      end
+
+      operation 136066 "setProduits"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "produits" explicit_type "Set<Produit>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129282 "Vendeur"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"vendeur\", catalog = \"facturationmf\")
+@AttributeOverrides({ 
+	@AttributeOverride(name=\"nom\", column=@Column(name=\"nom\")),
+	@AttributeOverride(name=\"prenom\", column=@Column(name=\"prenom\")), 
+	@AttributeOverride(name=\"email\", column=@Column(name=\"email\")), 
+	@AttributeOverride(name=\"telephone\", column=@Column(name=\"telephone\")) })
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 132610 // <generalisation>
+	relation 132610 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 132610 // <generalisation>
+	  b parent class_ref 128898 // Personne
+      end
+
+      attribute 133122 "commission"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 133250 "typeVendeur"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 132866 // chef (<unidirectional association>)
+	relation 132866 --->
+	  a role_name "chef" init_value " null" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 132866 // chef (<unidirectional association>)
+	  b parent class_ref 129282 // Vendeur
+      end
+
+      classrelation 132994 // factures (<unidirectional association>)
+	relation 132994 --->
+	  stereotype "Set"
+	  a role_name "factures" init_value " new HashSet<Facture>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 132994 // factures (<unidirectional association>)
+	  b parent class_ref 128514 // Facture
+      end
+
+      operation 147202 "Vendeur"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147330 "getChef"
+	public return_type class_ref 129282 // Vendeur
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = \"idChef\")
+"
+	
+	
+	
+      end
+
+      operation 147458 "setChef"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "chef" type class_ref 129282 // Vendeur
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147586 "getFactures"
+	public return_type class_ref 128514 // Facture
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@OneToMany(fetch = FetchType.LAZY, mappedBy = \"vendeur\")
+"
+	
+	
+	
+	comment " récupérer la liste des factures encodées par le vendeur"
+      end
+
+      operation 147714 "setFactures"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "factures" explicit_type "Set<Facture>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147842 "getCommission"
+	public explicit_return_type "float"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147970 "setCommission"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "commission" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148098 "getTypeVendeur"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148226 "setTypeVendeur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "typeVendeur" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148354 "toString"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 129410 "Lot"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"lot\", catalog = \"facturationmf\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131714 "idLot"
+	private explicit_type "Integer"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 131842 "quantite"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 130946 // produit (<unidirectional association>)
+	relation 130946 --->
+	  a role_name "produit" init_value " null" private
+	    comment " Le produit peut etre un produit simple ou un produit composite
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130946 // produit (<unidirectional association>)
+	  b parent class_ref 128770 // Produit
+      end
+
+      classrelation 131074 // factures (<unidirectional association>)
+	relation 131074 --->
+	  stereotype "Set"
+	  a role_name "factures" init_value " new HashSet<Facture>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 131074 // factures (<unidirectional association>)
+	  b parent class_ref 128514 // Facture
+      end
+
+      operation 140930 "Lot"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141058 "getIdLot"
+	public explicit_return_type "Integer"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = \"idLot\", unique = true, nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 141186 "setIdLot"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "idLot" explicit_type "Integer"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141314 "getQuantite"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Column(name = \"quantite\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 141442 "setQuantite"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "quantite" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141570 "getProduit"
+	public return_type class_ref 128770 // Produit
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = \"produit_idProduit\", nullable = false)
+"
+	
+	
+	
+      end
+
+      operation 141698 "setProduit"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "produit" type class_ref 128770 // Produit
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141826 "getFactures"
+	public return_type class_ref 128514 // Facture
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToMany(fetch = FetchType.LAZY)
+@JoinTable(name=\"detailLot\", catalog=\"facturationmf\",  joinColumns = {  
+		  @JoinColumn(name=\"lot_idLot\", nullable=false, updatable=false) }, inverseJoinColumns = {  
+		  @JoinColumn(name=\"facture_idFacture\", nullable=false, updatable=false) })
+"
+	
+	
+	
+      end
+
+      operation 141954 "setFactures"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "factures" explicit_type "Set<Facture>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129538 "ProduitC"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"produit\", catalog = \"facturationmf\")
+@DiscriminatorValue(\"ProduitC\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131970 // <generalisation>
+	relation 131970 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131970 // <generalisation>
+	  b parent class_ref 128770 // Produit
+      end
+
+      operation 146050 "ProduitC"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 132226 // composites (<unidirectional association>)
+	relation 132226 --->
+	  stereotype "Set"
+	  a role_name "composites" init_value " new HashSet<Composite>(0)" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 132226 // composites (<unidirectional association>)
+	  b parent class_ref 129154 // Composite
+      end
+
+      operation 146178 "getComposites"
+	public return_type class_ref 129154 // Composite
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Set<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@ManyToMany(fetch = FetchType.LAZY)
+  @JoinTable(name=\"detailComposite\", catalog=\"facturationmf\",  joinColumns = {  
+		  @JoinColumn(name=\"produit_idProduit\", nullable=false, updatable=false) }, inverseJoinColumns = {  
+		  @JoinColumn(name=\"composite_idComposite\", nullable=false, updatable=false) })
+"
+	
+	
+	
+      end
+
+      operation 146306 "setComposites"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "composites" explicit_type "Set<Composite>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 146434 "addComposite"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "composite" type class_ref 129154 // Composite
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "***************************************
+ méthodes pour la Set<Composite>"
+      end
+
+      operation 146562 "removeComposite"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "composite" type class_ref 129154 // Composite
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 146690 "removeAllComposites"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 146818 "retourPrix"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " calcul du prix de revient du produit composite ..."
+      end
+    end
+
+    class 129666 "ProduitS"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@Entity
+@Table(name = \"produit\", catalog = \"facturationmf\")
+@DiscriminatorValue(\"ProduitS\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 132354 // <generalisation>
+	relation 132354 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 132354 // <generalisation>
+	  b parent class_ref 128770 // Produit
+      end
+
+      operation 146946 "ProduitS"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147074 "retourPrix"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    classdiagram 134530 "diaClasses"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A2
+    end
+  end
+end

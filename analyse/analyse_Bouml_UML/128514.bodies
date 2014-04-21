@@ -1,0 +1,59 @@
+class Facture
+!!!136194.java!!!	Facture()
+	  
+!!!136322.java!!!	getIdFacture() : Integer
+	return idFacture;
+!!!136450.java!!!	setIdFacture(inout idFacture : Integer) : void
+	this.idFacture = idFacture;
+!!!136578.java!!!	getNrFacture() : String
+	return nrFacture;
+!!!136706.java!!!	setNrFacture(in nrFacture : String) : void
+	this.nrFacture = nrFacture;
+!!!136834.java!!!	getDateFacturation() : Date
+	return dateFacturation;
+!!!136962.java!!!	setDateFacturation(inout dateFacturation : Date) : void
+	this.dateFacturation = dateFacturation;
+!!!137090.java!!!	getModePaiement() : char
+	return modePaiement;
+!!!137218.java!!!	setModePaiement(in modePaiement : char) : void
+	this.modePaiement = modePaiement;
+!!!137346.java!!!	getPayer() : Integer
+	return payer;
+!!!137474.java!!!	setPayer(inout payer : Integer) : void
+	this.payer = payer;
+!!!137602.java!!!	getTypeAchat() : char
+	return typeAchat;
+!!!137730.java!!!	setTypeAchat(in typeAchat : char) : void
+	this.typeAchat = typeAchat;
+!!!137858.java!!!	getTauxTva() : double
+	return tauxTva;
+!!!137986.java!!!	setTauxTva(in tauxTva : double) : void
+	this.tauxTva = tauxTva;
+!!!138114.java!!!	getAdresseLivraison() : Adresse
+	return adresseLivraison;
+!!!138242.java!!!	setAdresseLivraison(inout adresse : Adresse) : void
+	this.adresseLivraison = adresse;
+!!!138370.java!!!	getClient() : Client
+	return client;
+!!!138498.java!!!	setClient(inout client : Client) : void
+	this.client = client;
+!!!138626.java!!!	getLots() : Lot
+	return lots;
+!!!138754.java!!!	setLots(inout lots : Set<Lot>) : void
+	this.lots = lots;
+!!!138882.java!!!	addLot(inout lot : Lot) : void
+	this.lots.add(lot);	
+!!!139010.java!!!	removeLot(inout lot : Lot) : void
+	this.lots.remove(lot);
+!!!139138.java!!!	removeAllLots() : void
+	this.lots.clear();
+!!!139266.java!!!	getVendeur() : Vendeur
+	return vendeur;
+!!!139394.java!!!	setVendeur(inout vendeur : Vendeur) : void
+	this.vendeur = vendeur;
+!!!139522.java!!!	montantTotalTvac() : double
+	double montant = 0.0;	
+		for ( Lot l : this.lots ){
+			montant += l.getQuantite() * l.getProduit().retourPrix();
+		}	
+	  return montant * (1 + this.tauxTva);

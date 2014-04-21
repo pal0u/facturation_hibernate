@@ -1,0 +1,19 @@
+class ProduitC
+!!!146050.java!!!	ProduitC()
+		
+!!!146178.java!!!	getComposites() : Composite
+		return composites;
+!!!146306.java!!!	setComposites(inout composites : Set<Composite>) : void
+		this.composites = composites;
+!!!146434.java!!!	addComposite(inout composite : Composite) : void
+		this.composites.add(composite);	
+!!!146562.java!!!	removeComposite(inout composite : Composite) : void
+		this.composites.remove(composite);
+!!!146690.java!!!	removeAllComposites() : void
+		this.composites.clear();
+!!!146818.java!!!	retourPrix() : double
+	double prixProduitC = 0.0;	
+	for ( Composite c : this.composites ){
+		prixProduitC += c.getQuantite() * c.getProduit().retourPrix();
+	}
+	  return prixProduitC;

@@ -1,0 +1,5 @@
+class ProduitS
+!!!146946.java!!!	ProduitS()
+		
+!!!147074.java!!!	retourPrix() : double
+	  return prixHtva;
