@@ -1,3 +1,12 @@
-cr�ation d'un projet Java et le partager sur github
+création d'un projet Java et le partager sur github
 facturation_hibernate
-tester synchronisation
+cet exercice a été réalisé dans le cadre d'une formation bachelier en info (Promotion sociale Belgique)
+a) modélisation Merise pour la base de données MCD-MLD-MPD
+b) création du diagramme de classes UML en rapport avec l'analyse Database
+c) utilisation des annotations Hibernate pour le mapping classes - tables
+d) illustration des différentes associations rencontrées dans une application
+e) autre technique: utilisation du Design pattern Dao pour la persistance des données
+
+à suivre
+(ce document sera réactualisé suite à l'évolution du travail)
+bien à vous
